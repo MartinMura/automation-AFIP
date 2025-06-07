@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "N5/3fdJLep8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Martin\\Desktop\\proyecto-afip\\CargadorAfip\\CargadorAfip.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Martin\\.nuget\\packages\\closedxml\\0.104.2\\closedxml.0.104.2.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\closedxml.parser\\1.2.0\\closedxml.parser.1.2.0.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\documentformat.openxml\\3.1.1\\documentformat.openxml.3.1.1.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\documentformat.openxml.framework\\3.1.1\\documentformat.openxml.framework.3.1.1.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\rbush\\4.0.0\\rbush.4.0.0.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\selenium.support\\4.32.0\\selenium.support.4.32.0.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\selenium.webdriver\\4.32.0\\selenium.webdriver.4.32.0.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\selenium.webdriver.chromedriver\\136.0.7103.4900\\selenium.webdriver.chromedriver.136.0.7103.4900.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
+    "C:\\Users\\Martin\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
