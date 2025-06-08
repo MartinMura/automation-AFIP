@@ -34,11 +34,9 @@ namespace CargadorAfip
 
 
                             string tipo = worksheet.Cell(fila, 7).GetString();
-                            //int puntoDeVenta = worksheet.Cell(fila, 8).IsEmpty() ? 0 : worksheet.Cell(fila, 3).GetValue<int>();
+                            
                             string puntoDeVenta = worksheet.Cell(fila, 8).GetString();
-                            //int numeroDesde = worksheet.Cell(fila, 9).IsEmpty() ? 0 : worksheet.Cell(fila, 4).GetValue<int>();
-                            //int numeroHasta = worksheet.Cell(fila, 10).IsEmpty() ? 0 : worksheet.Cell(fila, 5).GetValue<int>();
-                            //string codAutorizacion = worksheet.Cell(fila, 11).GetString();
+                            
                             string tipoDocReceptor = worksheet.Cell(fila, 9).GetString();
                             string nroDocReceptor = worksheet.Cell(fila, 10).GetString();
                             string denominacionReceptor= worksheet.Cell(fila, 11).GetString();
@@ -59,36 +57,36 @@ namespace CargadorAfip
                         }
 
 
-                    //foreach (var factura in facturas)
-                    //    {
-                    //        Console.WriteLine();
-                    //        Console.WriteLine(factura.Fecha);
-                    //        Console.WriteLine(factura.FechaDesde); 
-                    //        Console.WriteLine(factura.FechaHasta);
-                    //        Console.WriteLine(factura.Concepto);
-                    //        Console.WriteLine(factura.ActividadAsoc);
-                    //        Console.WriteLine(factura.CondicionIVA);
-                    //        Console.WriteLine(factura.Tipo);
-                    //        Console.WriteLine(factura.PuntoDeVenta);
-                           
-                    //        Console.WriteLine(factura.TipoDocReceptor);
-                    //        Console.WriteLine(factura.NroDocReceptor);
-                    //        Console.WriteLine(factura.DenominacionReceptor);
-                    //        Console.WriteLine(factura.CondicionVenta);
-                    //        Console.WriteLine(factura.Detalle);
-                    //        Console.WriteLine(factura.PrecioUnitario);
-                            
-                    //        Console.WriteLine();
-                    //    }
+                foreach (var factura in facturas)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine(factura.Fecha);
+                    Console.WriteLine(factura.FechaDesde);
+                    Console.WriteLine(factura.FechaHasta);
+                    Console.WriteLine(factura.Concepto.GetType());
+                    Console.WriteLine(factura.ActividadAsoc);
+                    Console.WriteLine(factura.CondicionIVA);
+                    Console.WriteLine(factura.Tipo);
+                    Console.WriteLine(factura.PuntoDeVenta);
 
-                    return facturas;
+                    Console.WriteLine(factura.TipoDocReceptor);
+                    Console.WriteLine(factura.NroDocReceptor);
+                    Console.WriteLine(factura.DenominacionReceptor);
+                    Console.WriteLine(factura.CondicionVenta);
+                    Console.WriteLine(factura.Detalle);
+                    Console.WriteLine(factura.PrecioUnitario);
+
+                    Console.WriteLine();
+                }
+
+                return facturas;
 
                 }
 
             }
             public static void MarcarFacturaComoCargada(int filaActual, string value)
             {
-                string rutaArchivo = @"C:\Users\Martin\Desktop\proyecto-afip\CargadorAfip\excel-datos-cargar.xlsx";
+                string rutaArchivo = @"C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAfip\excel-datos-cargar.xlsx"; //ruta a modificar si cambiamos el archivo de lugar, ver como hacerlo dinámico
 
                 using (var workbook = new XLWorkbook(rutaArchivo))
                 {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CargadorAfip")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49dbe7a268a5947d0a090b4867ab3fec81365102")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c94a39697d556ffdd45be8bb510d62935efca960")]
 [assembly: System.Reflection.AssemblyProductAttribute("CargadorAfip")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CargadorAfip")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
