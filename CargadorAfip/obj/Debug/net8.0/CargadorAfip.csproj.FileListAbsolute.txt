@@ -90,3 +90,4 @@ C:\Users\Martin\Desktop\proyecto-afip-final\cargadorafip\obj\Debug\net8.0\refint
 C:\Users\Martin\Desktop\proyecto-afip-final\cargadorafip\obj\Debug\net8.0\CargadorAfip.pdb
 C:\Users\Martin\Desktop\proyecto-afip-final\cargadorafip\obj\Debug\net8.0\CargadorAfip.genruntimeconfig.cache
 C:\Users\Martin\Desktop\proyecto-afip-final\cargadorafip\obj\Debug\net8.0\ref\CargadorAfip.dll
+C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAfip\bin\Debug\net8.0\excel-datos-cargar.xlsx

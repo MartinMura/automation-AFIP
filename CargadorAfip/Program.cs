@@ -7,41 +7,44 @@ using OpenQA.Selenium.Chrome; // Controlador para Chrome
 using OpenQA.Selenium.Support.UI; // necesario para SelectElement
 
 
-
-class Program
+namespace CargadorAfip
 {
-    static void Main()
+
+
+    class Program
     {
-
-        
-
-        
-        List <Factura> facturas = LeerExcel.Leer();
-
-        
-        
-
-        // 1. Creamos el navegador Chrome
-        IWebDriver driver = new ChromeDriver();
-
-        // 2. Vamos a una página web
-        driver.Navigate().GoToUrl("https://auth.afip.gob.ar/contribuyente_/login.xhtml?action=SYSTEM&system=rcel");
-
-
-        
-        Console.WriteLine("Ingrese su usuario en la web");
-        Console.ReadLine();
-        IWebElement input = driver.FindElement(By.XPath("//input[contains(@value, 'MURA ZUÑIGA GISSELE MARCELA')]"));
-        input.Click();
-
-
-
-        // Lo siguiente entra en loop
-
-        for (int i = 0; i < facturas.Count; i++)
+        static void Main()
         {
-            if (facturas[i].Cargada == "no")
+
+
+
+
+            List<Factura> facturas = LeerExcel.Leer();
+
+
+
+
+            // 1. Creamos el navegador Chrome
+            IWebDriver driver = new ChromeDriver();
+
+            // 2. Vamos a una página web
+            driver.Navigate().GoToUrl("https://auth.afip.gob.ar/contribuyente_/login.xhtml?action=SYSTEM&system=rcel");
+
+
+
+            Console.WriteLine("Ingrese su usuario en la web");
+            Console.ReadLine();
+            IWebElement input = driver.FindElement(By.XPath("//input[contains(@value, 'MURA ZUÑIGA GISSELE MARCELA')]"));
+            input.Click();
+
+            
+
+            // Lo siguiente entra en loop
+
+            for (int i = 0; i < facturas.Count; i++)
             {
+                if (string.IsNullOrWhiteSpace(facturas[i].Cargada) || facturas[i].Cargada.ToLower() == "no")
+                {
 
                     input = driver.FindElement(By.Id("btn_gen_cmp"));
                     input.Click();
@@ -57,26 +60,27 @@ class Program
 
                     MetodosHtml.botonContinuar(driver, "Continuar >");
 
-            
+
                     string conceptoOriginal = facturas[i].Concepto.ToString();
                     string concepto = conceptoOriginal.ToLowerInvariant().Replace(" ", "");
                     string valor;
                     var fechaFormateada = facturas[i].Fecha;
-            
-            
+
+
                     Console.WriteLine(fechaFormateada);
-            
-                    if(concepto.Contains("producto"))
+
+                    if (concepto.Contains("producto"))
                     {
-                        valor= "1";
+                        valor = "1";
                         MetodosHtml.botonSelector(driver, "idconcepto", valor);
                         IWebElement fecha = driver.FindElement(By.Id("fc"));
 
                         fecha.Clear();
                         fecha.SendKeys(facturas[i].Fecha); //fecha del comprobante
-                    } else if (concepto.Contains("servicios"))
+                    }
+                    else if (concepto.Contains("servicios"))
                     {
-                        valor= "2";
+                        valor = "2";
                         MetodosHtml.botonSelector(driver, "idconcepto", valor);
                         IWebElement fecha = driver.FindElement(By.Id("fc"));
 
@@ -91,9 +95,10 @@ class Program
                         IWebElement fechaActual = driver.FindElement(By.Id("vencimientopago"));
                         fechaActual.Clear();
                         fechaActual.SendKeys(DateTime.Now.ToString("dd/MM/yyyy")); //fecha actual de la compu,      AGREGAR AL EXCEL PARA QUE NO SEA SIEMPRE FECHA ACTUAL
-                    } else if (concepto.Contains("productos y servicios"))
+                    }
+                    else if (concepto.Contains("productos y servicios"))
                     {
-                        valor= "3";
+                        valor = "3";
                         MetodosHtml.botonSelector(driver, "idconcepto", valor);
                         IWebElement fecha = driver.FindElement(By.Id("fc"));
 
@@ -109,35 +114,36 @@ class Program
                         fechaActual.Clear();
                         fechaActual.SendKeys(DateTime.Now.ToString("dd/MM/yyyy")); //fecha actual de la compu
                     }
-            
 
 
-                    
 
 
-                    
+
+
+
 
 
                     string actividadOriginal = facturas[i].ActividadAsoc.ToString();
                     string actividad = actividadOriginal.ToLowerInvariant().Replace(" ", "");
 
-                    if(actividad.Contains("620100"))
+                    if (actividad.Contains("620100"))
                     {
                         valor = "620100";
                         MetodosHtml.botonSelector(driver, "actiAsociadaId", valor);
-                    } else if (actividad.Contains("692000"))
+                    }
+                    else if (actividad.Contains("692000"))
                     {
                         valor = "692000";
                         MetodosHtml.botonSelector(driver, "actiAsociadaId", valor);
                     }
 
-                        
+
 
 
 
                     MetodosHtml.botonContinuar(driver, "Continuar >");
 
-                    
+
 
                     string condicionIVAHTML = facturas[i].CondicionIVA.ToString();
                     string condicionIVAFiltrado = condicionIVAHTML.ToLowerInvariant().Replace(" ", "");
@@ -147,17 +153,20 @@ class Program
                         MetodosHtml.botonSelector(driver, "idivareceptor", valor);
 
 
-                    } else if (condicionIVAFiltrado.Contains("ivasujetoexento"))
+                    }
+                    else if (condicionIVAFiltrado.Contains("ivasujetoexento"))
                     {
                         valor = "4";
                         MetodosHtml.botonSelector(driver, "idivareceptor", valor);
 
-                    } else if (condicionIVAFiltrado.Contains("consumidorfinal"))
+                    }
+                    else if (condicionIVAFiltrado.Contains("consumidorfinal"))
                     {
                         valor = "5";
                         MetodosHtml.botonSelector(driver, "idivareceptor", valor);
 
-                    } else if (condicionIVAFiltrado.Contains("responsablemonotributo"))
+                    }
+                    else if (condicionIVAFiltrado.Contains("responsablemonotributo"))
                     {
                         valor = "6";
                         MetodosHtml.botonSelector(driver, "idivareceptor", valor);
@@ -211,21 +220,22 @@ class Program
                     MetodosHtml.campoALlenar(driver, "nrodocreceptor", facturas[i].NroDocReceptor);
                     Thread.Sleep(500);
 
-                    
+
                     Thread.Sleep(500);
 
-                    
+
                     Thread.Sleep(500);
 
                     string condicionDeVentaOriginal = facturas[i].CondicionVenta.ToString();
                     string condicionDeVenta = condicionDeVentaOriginal.ToLowerInvariant();
 
-                    if(condicionDeVenta.Contains("contado"))
+                    if (condicionDeVenta.Contains("contado"))
                     {
                         Thread.Sleep(500);
                         MetodosHtml.checkbox(driver, "formadepago1");
 
-                    } else if (condicionDeVenta.Contains("tarjeta de debito"))
+                    }
+                    else if (condicionDeVenta.Contains("tarjeta de debito"))
                     {
                         Console.WriteLine("ingrese los datos de la tarjeta manualmente en el formulario");
                         Thread.Sleep(500);
@@ -275,14 +285,14 @@ class Program
                     MetodosHtml.botonContinuar(driver, "Continuar >");
 
 
-            
 
 
-                    MetodosHtml.campoALlenar(driver, "detalle_descripcion1", facturas[i].Detalle); 
 
-                    MetodosHtml.botonSelector(driver, "detalle_medida1", "7"); 
+                    MetodosHtml.campoALlenar(driver, "detalle_descripcion1", facturas[i].Detalle);
 
-                    MetodosHtml.campoALlenar(driver, "detalle_precio1", facturas[i].PrecioUnitario); 
+                    MetodosHtml.botonSelector(driver, "detalle_medida1", "7");
+
+                    MetodosHtml.campoALlenar(driver, "detalle_precio1", facturas[i].PrecioUnitario);
 
                     MetodosHtml.botonContinuar(driver, "Continuar >");
 
@@ -300,24 +310,26 @@ class Program
 
                     MetodosHtml.botonContinuar(driver, "Menú Principal");
 
-                    
+
 
                     LeerExcel.MarcarFacturaComoCargada(i + 3, "si"); //cambiamos la condicion de la factura a cargada
-            
+
                     Console.WriteLine($"Se cargó la factura {i + 1}, del cuit N° {facturas[i].NroDocReceptor} ");
-            } else
-            {
-                Console.WriteLine($"La factura numero {i + 1} ya fue cargada previamente");
+                }
+                else
+                {
+                    Console.WriteLine($"La factura numero {i + 1} ya fue cargada previamente");
+                }
             }
-        }
 
             Console.WriteLine("Se terminaron de cargar las facturas, presione enter para cerrar el programa");
             Console.ReadKey();
 
-        
+
 
 
             // 6. Cerramos el navegador
             driver.Quit();
+        }
     }
 }

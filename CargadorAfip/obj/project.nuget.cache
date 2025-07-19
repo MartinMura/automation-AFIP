@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RpfhdJ8M4F4=",
+  "dgSpecHash": "xhX8kNSpBl4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\cargadorafip\\CargadorAfip.csproj",
+  "projectFilePath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Martin\\.nuget\\packages\\closedxml\\0.104.2\\closedxml.0.104.2.nupkg.sha512",
     "C:\\Users\\Martin\\.nuget\\packages\\closedxml.parser\\1.2.0\\closedxml.parser.1.2.0.nupkg.sha512",

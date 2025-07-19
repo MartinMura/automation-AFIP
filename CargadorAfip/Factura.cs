@@ -7,25 +7,25 @@ using DocumentFormat.OpenXml.Bibliography;
 
 namespace CargadorAfip
 {
-    internal class Factura
+    public class Factura
     {
-        private string fecha;
-        private string tipo;
-        private string puntoDeVenta;
+        public string fecha;
+        public string tipo;
+        public string puntoDeVenta;
   
-        private string tipoDocReceptor;
-        private string nroDocReceptor;
-        private string denominacionReceptor;
+        public string tipoDocReceptor;
+        public string nroDocReceptor;
+        public string denominacionReceptor;
 
-        private string fechaDesde;
-        private string fechaHasta;
-        private string concepto;
-        private string actividadAsoc;
-        private string condicionIVA;
-        private string condicionVenta;
-        private string detalle;
-        private string precioUnitario;
-        private string cargada;
+        public string fechaDesde;
+        public string fechaHasta;
+        public string concepto;
+        public string actividadAsoc;
+        public string condicionIVA;
+        public string condicionVenta;
+        public string detalle;
+        public string precioUnitario;
+        public string cargada;
 
         public string Cargada
         {

@@ -8,7 +8,7 @@ using ClosedXML.Excel;
 
 namespace CargadorAfip
 {
-    internal class LeerExcel
+    public class LeerExcel
     {
            public static List<Factura> Leer()
            {
@@ -75,7 +75,7 @@ namespace CargadorAfip
                     Console.WriteLine(factura.CondicionVenta);
                     Console.WriteLine(factura.Detalle);
                     Console.WriteLine(factura.PrecioUnitario);
-
+                    
                     Console.WriteLine();
                 }
 

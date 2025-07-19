@@ -1,9 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\CargadorAfip\\bin\\Debug",
-    "\\CargadorAfip\\bin\\Debug\\net8.0"
+    "\\CargadorAfip",
+    "\\CargadorAFIP-interfaz"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\CargadorAfip\\excel-datos-cargar.xlsx",
   "PreviewInSolutionExplorer": false
 }
