@@ -176,7 +176,7 @@
           "dependencies": {
             "ClosedXML": {
               "target": "Package",
-              "version": "[0.104.2, )"
+              "version": "[0.105.0, )"
             },
             "DotNetSeleniumExtras.WaitHelpers": {
               "target": "Package",
@@ -184,15 +184,15 @@
             },
             "Selenium.Support": {
               "target": "Package",
-              "version": "[4.32.0, )"
+              "version": "[4.34.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
-              "version": "[4.32.0, )"
+              "version": "[4.34.0, )"
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[136.0.7103.4900, )"
+              "version": "[138.0.7204.15700, )"
             }
           },
           "imports": [

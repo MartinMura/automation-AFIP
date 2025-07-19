@@ -12,8 +12,10 @@ namespace CargadorAfip
     {
            public static List<Factura> Leer()
            {
-               
-                using (var workbook = new XLWorkbook("excel-datos-cargar.xlsx"))
+            string rutaExcel = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "excel-datos-cargar.xlsx");
+            var workbook = new XLWorkbook(rutaExcel);
+
+            using (workbook)
                 {
                     List<Factura> facturas = new List<Factura>();
 

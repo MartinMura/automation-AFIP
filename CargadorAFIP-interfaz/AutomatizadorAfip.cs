@@ -15,8 +15,11 @@ namespace CargadorAFIP_interfaz
         public static void Ejecutar()
         {
             List<Factura> facturas = LeerExcel.Leer();
+            string chromeDriverPath = AppDomain.CurrentDomain.BaseDirectory;
+            var options = new ChromeOptions();
+            IWebDriver driver = new ChromeDriver(chromeDriverPath, options);
 
-            IWebDriver driver = new ChromeDriver();
+            //IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://auth.afip.gob.ar/contribuyente_/login.xhtml?action=SYSTEM&system=rcel");
 
             Console.WriteLine("Ingrese su usuario en la web");
@@ -295,7 +298,7 @@ namespace CargadorAFIP_interfaz
 
                     IAlert alert = driver.SwitchTo().Alert();
                     Console.WriteLine("Texto del alert: " + alert.Text);
-                    alert.Dismiss(); //dismiss para no subir nada
+                    alert.Accept(); //dismiss para no subir nada
 
                     Thread.Sleep(2000);
 

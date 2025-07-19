@@ -304,7 +304,7 @@ namespace CargadorAfip
 
                     IAlert alert = driver.SwitchTo().Alert();
                     Console.WriteLine("Texto del alert: " + alert.Text);
-                    alert.Dismiss(); //dismiss para no subir nada
+                    alert.Accept(); //dismiss para no subir nada
 
                     Thread.Sleep(2000);
 

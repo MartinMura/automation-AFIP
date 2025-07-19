@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CargadorAFIP-interfaz")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efa3623cd9301d060039499dd782c1f4cf2f6a6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef48888a49f79de6b8aa951b8fe8505387722ace")]
 [assembly: System.Reflection.AssemblyProductAttribute("CargadorAFIP-interfaz")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CargadorAFIP-interfaz")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

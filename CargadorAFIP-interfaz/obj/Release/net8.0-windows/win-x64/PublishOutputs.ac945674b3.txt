@@ -1,0 +1,13 @@
+C:\Users\Martin\Desktop\exeCargadorAfip\CargadorAFIP-interfaz.pdb
+C:\Users\Martin\Desktop\exeCargadorAfip\excel-datos-cargar.xlsx
+C:\Users\Martin\Desktop\exeCargadorAfip\selenium-manager\linux\selenium-manager
+C:\Users\Martin\Desktop\exeCargadorAfip\selenium-manager\macos\selenium-manager
+C:\Users\Martin\Desktop\exeCargadorAfip\selenium-manager\windows\selenium-manager.exe
+C:\Users\Martin\Desktop\exeCargadorAfip\chromedriver.exe
+C:\Users\Martin\Desktop\exeCargadorAfip\D3DCompiler_47_cor3.dll
+C:\Users\Martin\Desktop\exeCargadorAfip\PenImc_cor3.dll
+C:\Users\Martin\Desktop\exeCargadorAfip\PresentationNative_cor3.dll
+C:\Users\Martin\Desktop\exeCargadorAfip\vcruntime140_cor3.dll
+C:\Users\Martin\Desktop\exeCargadorAfip\wpfgfx_cor3.dll
+C:\Users\Martin\Desktop\exeCargadorAfip\CargadorAfip.pdb
+C:\Users\Martin\Desktop\exeCargadorAfip\CargadorAFIP-interfaz.exe

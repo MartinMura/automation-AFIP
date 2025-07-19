@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("chromedriver.exe")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("selenium-manager")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("selenium-manager")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("selenium-manager.exe")]
