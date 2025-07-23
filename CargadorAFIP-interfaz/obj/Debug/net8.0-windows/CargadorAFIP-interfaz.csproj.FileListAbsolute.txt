@@ -41,12 +41,9 @@ C:\Users\Martin\source\repos\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\Carg
 C:\Users\Martin\source\repos\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\CargadorAfip.pdb
 C:\Users\Martin\source\repos\CargadorAFIP-interfaz\obj\Debug\net8.0-windows\Cargador.14895635.Up2Date
 C:\Users\Martin\source\repos\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\excel-datos-cargar.xlsx
-C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\CargadorAfip.deps.json
-C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\CargadorAfip.runtimeconfig.json
 C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\selenium-manager\linux\selenium-manager
 C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\selenium-manager\macos\selenium-manager
 C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\selenium-manager\windows\selenium-manager.exe
-C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\CargadorAfip.exe
 C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\CargadorAFIP-interfaz.exe
 C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\excel-datos-cargar.xlsx
 C:\Users\Martin\Desktop\proyecto-afip-final\CargadorAFIP-interfaz\bin\Debug\net8.0-windows\CargadorAFIP-interfaz.deps.json

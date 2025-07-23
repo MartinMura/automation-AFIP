@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj": {}
+    "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\cargadorafip\\CargadorAfip.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj": {
+    "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\cargadorafip\\CargadorAfip.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj",
+        "projectUniqueName": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\cargadorafip\\CargadorAfip.csproj",
         "projectName": "CargadorAfip",
-        "projectPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj",
+        "projectPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\cargadorafip\\CargadorAfip.csproj",
         "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\obj\\",
+        "outputPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\cargadorafip\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,12 +59,6 @@
               "target": "Package",
               "version": "[3.11.0, )"
             },
-            "Microsoft.NET.ILLink.Tasks": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.15, )",
-              "autoReferenced": true
-            },
             "Selenium.Support": {
               "target": "Package",
               "version": "[4.34.0, )"
@@ -89,31 +83,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
         }
       }
     }
