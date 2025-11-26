@@ -303,13 +303,16 @@ namespace CargadorAfip
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent());
 
                     IAlert alert = driver.SwitchTo().Alert();
+                    //Acá hay un nuevo botón, ya no es una alert, sino un cuadro de diálogo con un botón aceptar y otro cancelar en un div con clase ui-dialog ui-widget ui-widget-content ui-corner-all ui-front dialog-con-sombra ui-dialog-buttons ui-draggable
+
+
                     Console.WriteLine("Texto del alert: " + alert.Text);
                     alert.Dismiss(); //dismiss para no subir nada
 
                     Thread.Sleep(2000);
 
                     MetodosHtml.botonContinuar(driver, "Menú Principal");
-
+                   
 
 
                     LeerExcel.MarcarFacturaComoCargada(i + 3, "si"); //cambiamos la condicion de la factura a cargada

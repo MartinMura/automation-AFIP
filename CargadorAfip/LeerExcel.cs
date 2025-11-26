@@ -26,11 +26,13 @@ namespace CargadorAfip
                     int ultimaFila = worksheet.LastRowUsed().RowNumber();
                     for(int fila = 3; fila <= ultimaFila; fila++)
                         {
-                            DateTime fecha = worksheet.Cell(fila, 1).GetDateTime();
+                            if (worksheet.Cell(fila, 1).IsEmpty())
+                                continue;
+                            DateTime fecha = worksheet.Cell(fila, 1).GetValue<DateTime>();
                             string fechaFormateada = fecha.ToString("dd/MM/yyyy");
-                            DateTime fechaDesde = worksheet.Cell(fila, 2).GetDateTime();
+                            DateTime fechaDesde = worksheet.Cell(fila, 2).GetValue<DateTime>();
                             string fechaFormateadaDesde = fechaDesde.ToString("dd/MM/yyyy");
-                            DateTime fechaHasta = worksheet.Cell(fila, 3).GetDateTime();
+                            DateTime fechaHasta = worksheet.Cell(fila, 3).GetValue<DateTime>();
                             string fechaFormateadaHasta = fechaHasta.ToString("dd/MM/yyyy");
                             //string concepto = worksheet.Cell(fila, 4).GetString();
                             string concepto = ValidarNoVacia(worksheet, fila, 4, "concepto");
