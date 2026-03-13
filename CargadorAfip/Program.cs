@@ -1,10 +1,11 @@
-﻿using System;
-using CargadorAfip;
+﻿using CargadorAfip;
 using ClosedXML.Excel; // Para trabajar con Excel
 using DocumentFormat.OpenXml.Office.CustomUI;
 using OpenQA.Selenium; // Selenium WebDriver
 using OpenQA.Selenium.Chrome; // Controlador para Chrome
+using SeleniumExtras.WaitHelpers; // Para condiciones de espera
 using OpenQA.Selenium.Support.UI; // necesario para SelectElement
+using System;
 
 
 namespace CargadorAfip
@@ -299,15 +300,20 @@ namespace CargadorAfip
 
                     MetodosHtml.botonContinuar(driver, "Confirmar Datos..."); //ahora despues de esto aparece el alert
 
-                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent());
+                    //WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+                    //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent());
 
-                    IAlert alert = driver.SwitchTo().Alert();
+                    WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+                    By xpath = By.XPath("//span[contains(text(),'Cancelar')]");
+                    var ultimoPaso = wait.Until(ExpectedConditions.ElementToBeClickable(xpath));
+                    ultimoPaso.Click();
+
+                    //IAlert alert = driver.SwitchTo().Alert();
                     //Acá hay un nuevo botón, ya no es una alert, sino un cuadro de diálogo con un botón aceptar y otro cancelar en un div con clase ui-dialog ui-widget ui-widget-content ui-corner-all ui-front dialog-con-sombra ui-dialog-buttons ui-draggable
 
 
-                    Console.WriteLine("Texto del alert: " + alert.Text);
-                    alert.Dismiss(); //dismiss para no subir nada
+                    //Console.WriteLine("Texto del alert: " + alert.Text);
+                    //alert.Dismiss(); //dismiss para no subir nada
 
                     Thread.Sleep(2000);
 

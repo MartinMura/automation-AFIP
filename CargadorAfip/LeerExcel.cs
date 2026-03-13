@@ -54,8 +54,8 @@ namespace CargadorAfip
                             //string tipoDocReceptor = ValidarNoVacia(worksheet, fila, 4, "tipo doc receptor");
                             //string nroDocReceptor = worksheet.Cell(fila, 10).GetString();
                             string nroDocReceptor = ValidarNoVacia(worksheet, fila, 10, "nro Doc repector");
-                        //string denominacionReceptor= ValidarNoVacia(worksheet, fila, 11, "Denominacion Receptor");
-                        string denominacionReceptor = null;
+                            //string denominacionReceptor= ValidarNoVacia(worksheet, fila, 11, "Denominacion Receptor");
+                            string denominacionReceptor = null;
                             //string denominacionReceptor= worksheet.Cell(fila, 11).GetString();
                             string condicionVenta = ValidarNoVacia(worksheet, fila, 12, "condicion de venta");
                             //string condicionVenta = worksheet.Cell(fila, 12).GetString();
