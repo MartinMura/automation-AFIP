@@ -24,6 +24,7 @@ namespace CargadorAfip
 
                     var worksheet = workbook.Worksheet("Sheet1");
                     int ultimaFila = worksheet.LastRowUsed().RowNumber();
+                    string usuario = worksheet.Cell(1, 1).GetString();
                     for(int fila = 3; fila <= ultimaFila; fila++)
                         {
                             if (worksheet.Cell(fila, 1).IsEmpty())
@@ -72,7 +73,7 @@ namespace CargadorAfip
 
                            
 
-                            facturas.Add(new Factura(fechaFormateada, fechaFormateadaDesde, fechaFormateadaHasta, concepto, actividadAsoc, condicionIVA, tipo, puntoDeVenta,tipoDocReceptor, nroDocReceptor, denominacionReceptor, condicionVenta, detalle, precioUnitario, cargada));
+                            facturas.Add(new Factura(usuario, fechaFormateada, fechaFormateadaDesde, fechaFormateadaHasta, concepto, actividadAsoc, condicionIVA, tipo, puntoDeVenta,tipoDocReceptor, nroDocReceptor, denominacionReceptor, condicionVenta, detalle, precioUnitario, cargada));
 
                     
                         }
@@ -81,6 +82,7 @@ namespace CargadorAfip
                 foreach (var factura in facturas)
                 {
                     Console.WriteLine();
+                    Console.WriteLine(factura.Usuario);
                     Console.WriteLine(factura.Fecha);
                     Console.WriteLine(factura.FechaDesde);
                     Console.WriteLine(factura.FechaHasta);

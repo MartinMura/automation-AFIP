@@ -35,7 +35,7 @@ namespace CargadorAfip
 
             Console.WriteLine("Ingrese su usuario en la web");
             Console.ReadLine();
-            IWebElement input = driver.FindElement(By.XPath("//input[contains(@value, 'MURA ZUÑIGA GISSELE MARCELA')]"));
+            IWebElement input = driver.FindElement(By.XPath($"//input[contains(@value, '{facturas[0].usuario}')]"));
             input.Click();
 
             

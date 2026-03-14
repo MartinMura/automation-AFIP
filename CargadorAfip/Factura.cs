@@ -26,6 +26,13 @@ namespace CargadorAfip
         public string detalle;
         public string precioUnitario;
         public string cargada;
+        public string usuario;
+
+        public string Usuario
+        {
+            get => usuario;
+            set => usuario = value;
+        }
 
         public string Cargada
         {
@@ -120,8 +127,9 @@ namespace CargadorAfip
 
        
 
-        public Factura(string fecha, string fechaDesde, string fechaHasta, string concepto, string actividadAsoc, string condicionIVA, string tipo, string puntoDeVenta, string tipoDocReceptor, string nroDocReceptor, string denominacionReceptor, string condicionVenta, string detalle, string precioUnitario, string cargada)
+        public Factura(string usuario, string fecha, string fechaDesde, string fechaHasta, string concepto, string actividadAsoc, string condicionIVA, string tipo, string puntoDeVenta, string tipoDocReceptor, string nroDocReceptor, string denominacionReceptor, string condicionVenta, string detalle, string precioUnitario, string cargada)
         {
+            Usuario = usuario;
             Fecha = fecha;
             FechaDesde = fechaDesde;
             FechaHasta = fechaHasta;
