@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
+﻿using CargadorAfip; // Para acceder a LeerExcel y Factura
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-using CargadorAfip; // Para acceder a LeerExcel y Factura
+using SeleniumExtras.WaitHelpers;
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Windows;
 
 namespace CargadorAFIP_interfaz
@@ -16,10 +17,10 @@ namespace CargadorAFIP_interfaz
         {
             List<Factura> facturas = LeerExcel.Leer();
             string chromeDriverPath = AppDomain.CurrentDomain.BaseDirectory;
-            var options = new ChromeOptions();
-            IWebDriver driver = new ChromeDriver(chromeDriverPath, options);
+            //var options = new ChromeOptions();
+            //IWebDriver driver = new ChromeDriver(chromeDriverPath, options);
 
-            //IWebDriver driver = new ChromeDriver();
+            IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://auth.afip.gob.ar/contribuyente_/login.xhtml?action=SYSTEM&system=rcel");
 
             Console.WriteLine("Ingrese su usuario en la web");
@@ -32,7 +33,7 @@ namespace CargadorAFIP_interfaz
                  MessageBoxImage.Information
             );
 
-            IWebElement input = driver.FindElement(By.XPath("//input[contains(@value, 'MURA ZUÑIGA GISSELE MARCELA')]"));
+            IWebElement input = driver.FindElement(By.XPath($"//input[contains(@value, '{facturas[0].usuario}')]"));
             input.Click();
 
             for (int i = 0; i < facturas.Count; i++)
@@ -294,11 +295,11 @@ namespace CargadorAFIP_interfaz
                     MetodosHtml.botonContinuar(driver, "Confirmar Datos..."); //ahora despues de esto aparece el alert
 
                     WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent());
+                    //wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.AlertIsPresent());
 
-                    IAlert alert = driver.SwitchTo().Alert();
-                    Console.WriteLine("Texto del alert: " + alert.Text);
-                    alert.Accept(); //dismiss para no subir nada
+                    By xpath = By.XPath("//span[contains(text(),'Cancelar')]");
+                    var ultimoPaso = wait.Until(ExpectedConditions.ElementToBeClickable(xpath));
+                    ultimoPaso.Click();
 
                     Thread.Sleep(2000);
 

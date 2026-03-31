@@ -150,12 +150,6 @@
           "buildTransitive/Selenium.WebDriver.targets": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/138.0.7204.15700": {
-        "type": "package",
-        "build": {
-          "build/Selenium.WebDriver.ChromeDriver.targets": {}
-        }
-      },
       "SixLabors.Fonts/2.1.3": {
         "type": "package",
         "compile": {
@@ -192,8 +186,7 @@
           "ClosedXML": "0.105.0",
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "Selenium.Support": "4.34.0",
-          "Selenium.WebDriver": "4.34.0",
-          "Selenium.WebDriver.ChromeDriver": "138.0.7204.15700"
+          "Selenium.WebDriver": "4.34.0"
         },
         "compile": {
           "bin/placeholder/CargadorAfip.dll": {}
@@ -392,30 +385,6 @@
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/138.0.7204.15700": {
-      "sha512": "TXuEqxz4dHy+Xp+C+lQJAqqAACO8EWP92l+wc5XtWBF5JQsF0Qua/aaGgeTnNYwnQLwJcsvMJJjSzyvXdCYQKA==",
-      "type": "package",
-      "path": "selenium.webdriver.chromedriver/138.0.7204.15700",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "README.md",
-        "build/DefinePropertiesChromeDriver.targets",
-        "build/Selenium.WebDriver.ChromeDriver.targets",
-        "driver/linux64/LICENSE.chromedriver",
-        "driver/linux64/chromedriver",
-        "driver/mac64/LICENSE.chromedriver",
-        "driver/mac64/chromedriver",
-        "driver/mac64arm/LICENSE.chromedriver",
-        "driver/mac64arm/chromedriver",
-        "driver/win32/LICENSE.chromedriver",
-        "driver/win32/chromedriver.exe",
-        "nupkg-icon.png",
-        "selenium.webdriver.chromedriver.138.0.7204.15700.nupkg.sha512",
-        "selenium.webdriver.chromedriver.nuspec"
-      ]
-    },
     "SixLabors.Fonts/2.1.3": {
       "sha512": "ORWbZ5BHrC/LZvo+Y09MnoJq5VUKD85LsYALk+YI7CHFra+m5arCkz00IntDM6SrAiB22bvSdKtKmuCyHOKlqg==",
       "type": "package",
@@ -476,7 +445,6 @@
       "RBush >= 4.0.0",
       "Selenium.Support >= 4.34.0",
       "Selenium.WebDriver >= 4.34.0",
-      "Selenium.WebDriver.ChromeDriver >= 138.0.7204.15700",
       "SixLabors.Fonts >= 2.1.3",
       "System.IO.Packaging >= 9.0.7"
     ]
@@ -488,11 +456,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj",
+      "projectUniqueName": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj",
       "projectName": "CargadorAFIP-interfaz",
-      "projectPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj",
+      "projectPath": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj",
       "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAFIP-interfaz\\obj\\",
+      "outputPath": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAFIP-interfaz\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -507,15 +475,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj": {
-              "projectPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj"
+            "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAfip\\CargadorAfip.csproj": {
+              "projectPath": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAfip\\CargadorAfip.csproj"
             }
           }
         }
@@ -530,7 +497,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -572,10 +539,6 @@
             "target": "Package",
             "version": "[4.34.0, )"
           },
-          "Selenium.WebDriver.ChromeDriver": {
-            "target": "Package",
-            "version": "[138.0.7204.15700, )"
-          },
           "SixLabors.Fonts": {
             "target": "Package",
             "version": "[2.1.3, )"
@@ -604,7 +567,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

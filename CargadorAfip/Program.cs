@@ -26,11 +26,26 @@ namespace CargadorAfip
 
 
             // 1. Creamos el navegador Chrome
-            IWebDriver driver = new ChromeDriver();
+            //IWebDriver driver = new ChromeDriver();
+            
+            
+            try
+            {
+                Console.WriteLine("Iniciando ChromeDriver...");
+
+                IWebDriver driver = new ChromeDriver();
+
+                Console.WriteLine("Chrome abierto correctamente");
+
+                driver.Navigate().GoToUrl("https://auth.afip.gob.ar/contribuyente_/login.xhtml?action=SYSTEM&system=rcel");
+
+                Console.ReadLine(); // 👈 para que no se cierre
+            
+
 
             // 2. Vamos a una página web
-            driver.Navigate().GoToUrl("https://auth.afip.gob.ar/contribuyente_/login.xhtml?action=SYSTEM&system=rcel");
 
+            
 
 
             Console.WriteLine("Ingrese su usuario en la web");
@@ -339,6 +354,17 @@ namespace CargadorAfip
 
             // 6. Cerramos el navegador
             driver.Quit();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("ERROR:");
+                Console.WriteLine(ex.ToString());
+
+                File.WriteAllText("error_selenium.txt", ex.ToString());
+
+                Console.ReadLine(); // 👈 para poder leer el error
+            }
+
         }
     }
 }

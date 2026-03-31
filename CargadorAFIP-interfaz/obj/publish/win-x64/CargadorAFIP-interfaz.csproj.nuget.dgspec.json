@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj": {}
+    "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj": {
+    "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj",
+        "projectUniqueName": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj",
         "projectName": "CargadorAFIP-interfaz",
-        "projectPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj",
+        "projectPath": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAFIP-interfaz\\CargadorAFIP-interfaz.csproj",
         "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAFIP-interfaz\\obj\\publish\\win-x64\\",
+        "outputPath": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAFIP-interfaz\\obj\\publish\\win-x64\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj": {
-                "projectPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj"
+              "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAfip\\CargadorAfip.csproj": {
+                "projectPath": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAfip\\CargadorAfip.csproj"
               }
             }
           }
@@ -49,7 +48,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -82,7 +81,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.15, )",
+              "version": "[8.0.21, )",
               "autoReferenced": true
             },
             "RBush": {
@@ -96,10 +95,6 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.34.0, )"
-            },
-            "Selenium.WebDriver.ChromeDriver": {
-              "target": "Package",
-              "version": "[138.0.7204.15700, )"
             },
             "SixLabors.Fonts": {
               "target": "Package",
@@ -124,15 +119,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
+              "version": "[8.0.21, 8.0.21]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
+              "version": "[8.0.21, 8.0.21]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
+              "version": "[8.0.21, 8.0.21]"
             }
           ],
           "frameworkReferences": {
@@ -143,7 +138,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -152,14 +147,14 @@
         }
       }
     },
-    "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj": {
+    "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAfip\\CargadorAfip.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj",
+        "projectUniqueName": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAfip\\CargadorAfip.csproj",
         "projectName": "CargadorAfip",
-        "projectPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\CargadorAfip.csproj",
+        "projectPath": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAfip\\CargadorAfip.csproj",
         "packagesPath": "C:\\Users\\Martin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Martin\\Desktop\\proyecto-afip-final\\CargadorAfip\\obj\\",
+        "outputPath": "C:\\Users\\Martin\\Documents\\repositorios\\automation-AFIP\\CargadorAfip\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -174,7 +169,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -193,7 +187,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -210,7 +204,7 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.15, )",
+              "version": "[8.0.21, )",
               "autoReferenced": true
             },
             "Selenium.Support": {
@@ -220,10 +214,6 @@
             "Selenium.WebDriver": {
               "target": "Package",
               "version": "[4.34.0, )"
-            },
-            "Selenium.WebDriver.ChromeDriver": {
-              "target": "Package",
-              "version": "[138.0.7204.15700, )"
             }
           },
           "imports": [
@@ -240,15 +230,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
+              "version": "[8.0.21, 8.0.21]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
+              "version": "[8.0.21, 8.0.21]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[8.0.15, 8.0.15]"
+              "version": "[8.0.21, 8.0.21]"
             }
           ],
           "frameworkReferences": {
@@ -256,7 +246,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
